@@ -1,0 +1,32 @@
+﻿/*oma css-tiedosto kotitehtävä 2:teen*/
+#wrap {
+    width: 960px;
+    margin: 0 auto;
+}
+header, footer {
+    padding: 20px;
+    background: #999;
+}
+#one {
+    padding: 20px;
+    background: #efefef;
+    float:left;
+    /*float:right;*/
+    /*kokonaisleveys #one on 680px=(640px + 2*20px(paddingit)*/
+    width: 640px;
+    
+}
+#two {
+    padding: 20px;
+    background: #ccc;
+    /*kokonaisleveys #two on #wrap leveys 960px - 680px(#one leveys) = 280px*/
+    float:right;
+    /*float: left;*/
+    width: 220px;
+    
+}
+footer {
+    /*clear erottaa footerin ylempien osien floattauksesta ja se 
+        pysyy aina niiden alapuolella*/
+    clear: both;
+}
